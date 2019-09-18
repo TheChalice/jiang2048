@@ -8,9 +8,11 @@ WORKDIR /data/mainline
 
 #RUN bower install && gulp build
 
+#RUN apk add --update curl
+
 RUN npm install
 
-EXPOSE 8080
+EXPOSE 9000
 
 CMD ["gulp"]
 
